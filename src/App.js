@@ -1,13 +1,13 @@
-import 'antd/dist/antd.css';
-import './App.css';
-import React from 'react';
-import CarwashList from './components/CarwashList';
-import CarwashSingle from './components/CarwashSingle';
-import CustomerList from './components/CustomerList';
-import CustomerSingle from './components/CustomerSingle';
-import SideBar from './components/SideBar';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import 'leaflet/dist/leaflet.css';
+import "antd/dist/antd.css";
+import "./App.css";
+import React from "react";
+import CarwashList from "./components/CarwashList";
+import CarwashSingle from "./components/CarwashSingle";
+import CustomerList from "./components/CustomerList";
+import CustomerSingle from "./components/CustomerSingle";
+import SideBar from "./components/SideBar";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "leaflet/dist/leaflet.css";
 
 
 export default () => {
@@ -24,4 +24,4 @@ export default () => {
         </BrowserRouter>
       </div>
   );
-}
+};

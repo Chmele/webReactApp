@@ -1,9 +1,9 @@
-import './styles.css';
-import React, { useState, useEffect } from 'react'; 
-import http from '../../http-common';
-import { Button, PageHeader, Space } from 'antd';
-import { useParams } from 'react-router-dom';
-import SingleMapView from '../SingleMapView'
+import "./styles.css";
+import React, { useState, useEffect } from "react"; 
+import http from "../../http-common";
+import { Button, PageHeader, Space } from "antd";
+import { useParams } from "react-router-dom";
+import SingleMapView from "../SingleMapView";
 
 export default () => {
   const[carwash, setCarwash] = useState({});
@@ -17,13 +17,13 @@ export default () => {
   },[id]);
   
   return (
-    <div className='full-width'>
+    <div className="full-width">
       <PageHeader
         className="site-page-header"
         onBack={() => window.history.back()}
         title={carwash.name}
         subTitle={
-          <Space size='middle'>
+          <Space size="middle">
             <a href={carwash.website}>На сайт</a>
             {/* <Button>Змінити</Button>
             <Button danger>Видалити</Button> */}
@@ -33,4 +33,4 @@ export default () => {
       <SingleMapView carwash={carwash}/>
     </div>
   );
-}
+};

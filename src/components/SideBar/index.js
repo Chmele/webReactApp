@@ -1,22 +1,22 @@
-import './styles.css';
-import { Menu } from 'antd';
-import { Link } from 'react-router-dom';
+import "./styles.css";
+import { Menu } from "antd";
+import { Link } from "react-router-dom";
 
 import {
   RadarChartOutlined, 
   SmileOutlined,
   CopyOutlined,
   TableOutlined
-  } from '@ant-design/icons';
+  } from "@ant-design/icons";
 
 export default () => {
 return (
     <div className="sidebar">
       <Menu>
-        <Menu.Item key='0' icon={<RadarChartOutlined />}>
+        <Menu.Item key="0" icon={<RadarChartOutlined />}>
           <Link to="/carwashes">Список автомийок</Link>
         </Menu.Item>
-        <Menu.Item key='1' icon={<SmileOutlined />}>
+        <Menu.Item key="1" icon={<SmileOutlined />}>
           <Link to="/customers">Список замовників</Link>
         </Menu.Item>
         {/* <Menu.Item key='2' icon={<CopyOutlined />}>
@@ -28,4 +28,4 @@ return (
       </Menu>
     </div>
   );
-}
+};

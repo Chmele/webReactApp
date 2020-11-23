@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import http from '../../http-common';
-import { List } from 'antd';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import http from "../../http-common";
+import { List } from "antd";
 
 export default () => {
-  const [carwashes, setCarwashes] = useState([])
+  const [carwashes, setCarwashes] = useState([]);
 
   useEffect(() => {
-    http.get(`/api/customers/`)
+    http.get("/api/customers/")
       .then(response => setCarwashes(response.data))
       .catch(error => console.log(error));
   }, []);
@@ -21,4 +21,4 @@ export default () => {
           ) }
       </List>
   );
-}
+};
