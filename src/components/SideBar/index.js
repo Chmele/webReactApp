@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import {
   RadarChartOutlined, 
   SmileOutlined,
-  CopyOutlined,
-  TableOutlined
+  LoginOutlined
   } from "@ant-design/icons";
 
 export default () => {
@@ -18,6 +17,9 @@ return (
         </Menu.Item>
         <Menu.Item key="1" icon={<SmileOutlined />}>
           <Link to="/customers">Список замовників</Link>
+        </Menu.Item>
+        <Menu.Item key="2" icon={<LoginOutlined />}>
+          <Link to="/login">Вхід</Link>
         </Menu.Item>
         {/* <Menu.Item key='2' icon={<CopyOutlined />}>
           <Link to="/orders">Список замовлень</Link>

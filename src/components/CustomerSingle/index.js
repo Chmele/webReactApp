@@ -9,7 +9,7 @@ export default () => {
   let { id } = useParams();
 
   useEffect(() => {
-    http.get(`/api/customers/${id}`)
+    http.get(`/customers/${id}`)
     .then(response => setCarwash(response.data))
     .catch(error => console.log(error));
   },[id]);

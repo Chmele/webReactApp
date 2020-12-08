@@ -8,7 +8,7 @@ import CustomerSingle from "./components/CustomerSingle";
 import SideBar from "./components/SideBar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
-
+import LoginView from "./components/LoginView";
 
 export default () => {
   return (
@@ -20,6 +20,7 @@ export default () => {
             <Route path="/carwashes/:id" exact component={CarwashSingle} />
             <Route path="/customers" exact component={CustomerList} />
             <Route path="/customers/:id" exact component={CustomerSingle} />
+            <Route path="/login" exact component={LoginView} />
           </Switch>
         </BrowserRouter>
       </div>

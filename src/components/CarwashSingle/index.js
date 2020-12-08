@@ -11,7 +11,7 @@ export default () => {
   let { id } = useParams();
 
   useEffect(() => {
-    http.get(`/api/carwashes/${id}`)
+    http.get(`/carwashes/${id}`)
     .then(response => setCarwash(response.data))
     .catch(error => console.log(error));
   },[id]);
@@ -33,4 +33,4 @@ export default () => {
       <SingleMapView carwash={carwash}/>
     </div>
   );
-};
+};                        

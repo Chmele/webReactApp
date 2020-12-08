@@ -9,7 +9,7 @@ export default () => {
   const [carwashes, setCarwashes] = useState([])
   
   useEffect(() => {
-    http.get("/api/carwashes/")
+    http.get("/carwashes/")
       .then(response => setCarwashes(response.data))
       .catch(error => console.log(error));
   }, []);

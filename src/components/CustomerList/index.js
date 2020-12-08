@@ -7,7 +7,9 @@ export default () => {
   const [carwashes, setCarwashes] = useState([]);
 
   useEffect(() => {
-    http.get("/api/customers/")
+    http.get("/customers/", {
+      access_token: localStorage.Token,
+    })
       .then(response => setCarwashes(response.data))
       .catch(error => console.log(error));
   }, []);
